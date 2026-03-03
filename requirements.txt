@@ -1,0 +1,25 @@
+# ─── Core ─────────────────────────────────────────────────────────────────────
+ollama                      # Qwen2.5:3b LLM via local Ollama server
+
+# ─── STT ──────────────────────────────────────────────────────────────────────
+openai-whisper              # Whisper speech-to-text
+sounddevice                 # microphone recording
+scipy                       # WAV file I/O
+numpy                       # audio array manipulation
+webrtcvad                   # Voice Activity Detection (auto start/stop on speech)
+
+# ─── TTS ──────────────────────────────────────────────────────────────────────
+kokoro>=0.9.4               # Kokoro TTS pipeline
+piper                       # Piper neural TTS (used in test2.py)
+soundfile                   # audio file I/O used by Kokoro tests
+
+# ─── RAG + Memory ─────────────────────────────────────────────────────────────
+langchain                   # RAG orchestration framework
+langchain-community         # PDF loaders, HuggingFace embeddings
+langchain-chroma            # LangChain <-> ChromaDB adapter
+chromadb                    # persistent vector database
+sentence-transformers       # all-MiniLM-L6-v2 embedding model
+pypdf                       # PDF parsing backend for PyPDFLoader
+
+# ─── Utilities ────────────────────────────────────────────────────────────────
+torch                       # required by Kokoro and sentence-transformers

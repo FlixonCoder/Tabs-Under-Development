@@ -1,0 +1,77 @@
+# ─── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.Python
+pip-wheel-metadata/
+
+# ─── Virtual Environments ─────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+TTS/venv/
+
+# ─── Models & Large Binary Files ──────────────────────────────────────────────
+# Whisper model cache
+~/.cache/whisper/
+*.pt
+*.bin
+*.safetensors
+*.gguf
+
+# Kokoro / PyTorch model files
+*.pth
+
+# Piper .onnx model files (large — download separately, do not commit)
+*.onnx
+*.onnx.json
+
+# ─── ChromaDB / Vector Store Data ─────────────────────────────────────────────
+data/chroma_memory/
+data/chroma_rag/
+
+# ─── Audio Files ──────────────────────────────────────────────────────────────
+*.wav
+*.mp3
+*.ogg
+*.flac
+
+# ─── Conversation Logs (auto-generated) ───────────────────────────────────────
+# Keep the folder but ignore generated conversation text files
+Agentic-RAG/data/*.txt
+
+# ─── Environment Variables ────────────────────────────────────────────────────
+.env
+.env.*
+*.env
+
+# ─── IDE & Editor ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ─── OS & System ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Jupyter ──────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ─── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ─── Scratch / Archive folder ────────────────────────────────────────────────
+# Contains old test scripts and generated audio files — not for deployment
+bin/
