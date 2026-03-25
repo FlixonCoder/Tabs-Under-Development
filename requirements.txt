@@ -10,7 +10,7 @@ webrtcvad                   # Voice Activity Detection (auto start/stop on speec
 
 # ─── TTS ──────────────────────────────────────────────────────────────────────
 kokoro>=0.9.4               # Kokoro TTS pipeline
-piper                       # Piper neural TTS (used in test2.py)
+piper                       # Piper neural TTS (offline fallback — auto-used when Kokoro unavailable)
 soundfile                   # audio file I/O used by Kokoro tests
 
 # ─── RAG + Memory ─────────────────────────────────────────────────────────────
